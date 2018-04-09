@@ -1,0 +1,5123 @@
+Connection: keep-alive
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>Portas Comuns</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"><LINK
+REL="HOME"
+TITLE="Red Hat Enterprise Linux 4"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Ap�ndices"
+HREF="pt-appendixes.html"><LINK
+REL="PREVIOUS"
+TITLE="Exploits e Ataques Comuns"
+HREF="ch-exploits.html"><LINK
+REL="NEXT"
+TITLE="�ndice Remissivo"
+HREF="generated-index.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="rhdocs-man.css"></HEAD
+><BODY
+CLASS="APPENDIX"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Red Hat Enterprise Linux 4: Guia de Seguran�a</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="ch-exploits.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="generated-index.html"
+ACCESSKEY="N"
+>Pr�xima</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="APPENDIX"
+><H1
+><A
+NAME="CH-PORTS"
+></A
+>Ap�ndice C. Portas Comuns</H1
+><P
+>As tabelas a seguir listam as portas de comunica��o mais comuns usadas pelos servi�os, daemons e programas inclusos no Red Hat Enterprise Linux. Esta lista tamb�m pode ser encontrada no arquivo <TT
+CLASS="FILENAME"
+>/etc/services</TT
+>. Para acessar uma lista oficial das portas Bem Conhecidas (Well Knnown), Registradas (Registered) e Din�micas (Dynamic) conforme designadas pela IANA (Internet Assigned Numbers Authority), consulte o site:</P
+><P
+><A
+HREF="http://www.iana.org/assignments/port-numbers"
+TARGET="_top"
+>http://www.iana.org/assignments/port-numbers</A
+> </P
+><DIV
+CLASS="NOTE"
+><P
+></P
+><TABLE
+CLASS="NOTE"
+WIDTH="100%"
+BORDER="0"
+><TR
+><TD
+WIDTH="25"
+ALIGN="CENTER"
+VALIGN="TOP"
+><IMG
+SRC="./stylesheet-images/note.png"
+HSPACE="5"
+ALT="Nota"></TD
+><TH
+ALIGN="LEFT"
+VALIGN="CENTER"
+><B
+>Nota</B
+></TH
+></TR
+><TR
+><TD
+>&nbsp;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="TOP"
+><P
+>A <TT
+CLASS="REPLACEABLE"
+><I
+>Camada</I
+></TT
+>, quando listada, denota se o servi�o ou protocolo usa TCP ou UDP para transporte. Se n�o estiver especificada, o servi�o/protocolo pode usar ambos, TCP e UDP. </P
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>A <A
+HREF="ch-ports.html#TB-PORTS-WK"
+>Tabela C-1</A
+> lista as Portas Conhecidas (Well Known Ports) conforme definidas pela IANA e s�o usadas pelo Red Hat Enterprise Linux como as portas de comunica��o default para v�rios servi�os, incluindo FTP, SSH e Samba. </P
+><DIV
+CLASS="TABLE"
+><A
+NAME="TB-PORTS-WK"
+></A
+><TABLE
+BORDER="1"
+BGCOLOR="#DCDCDC"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><THEAD
+><TR
+><TH
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>N�mero da Porta / Camada</TH
+><TH
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Nome</TH
+><TH
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Coment�rio</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>tcpmux </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Multiplexador do servi�o da porta do TCP </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>5 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>rje </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Entrada de Tarefa Remota </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>echo </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o Echo </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>9 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>descartar </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o zero para teste de conex�o </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>11 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>systat </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de Estado do Sistema para listar as portas conectadas </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>13 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>daytime </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Envia data e hora para a m�quina requerente </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>17 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>qotd </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Envia a cita��o do dia para a m�quina conectada </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>18 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>msp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Envio de Mensagem </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>19 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>chargen </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de Gera��o de Caractere; envia trechos infinitos de caracteres </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>20 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ftp-data </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Porta de dados do FTP </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>21 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ftp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Porta do Protocolo de Transfer�ncia de Arquivos (FTP); por vezes usada pelo Protocolo de Servi�o de Arquivos (FSP - File Service Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>22 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ssh </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o Secure Shell (SSH) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>23 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>telnet </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>O servi�o Telnet </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>25 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>smtp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Transfer�ncia de Correspond�ncia Simples (SMTP- Simple Mail Transfer Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>37 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>time </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Hora </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>39 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>rlp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Localidade de Recursos </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>42 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>nameserver </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de Nomes da Internet </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>43 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>nicname </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o do diret�rio WHOIS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>49 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>tacacs </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sistema de Controle de Acesso do Controlador de Acesso do Terminal para autentica��o e acesso baseado no TCP/IP </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>50 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>re-mail-ck </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Verifica��o de Correspond�ncia Remota </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>53 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>domain </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>servi�os de nome de dom�nio (tal como BIND) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>63 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>whois++ </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>WHOIS++, servi�os WHOIS extendidos </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>67 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>bootps </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os do Protocolo de Bootstrap (BOOTP); tamb�m usado pelos servi�os do Protocolo de Configura��o da M�quina Din�mica (Dynamic Host Configuration Protocol, DHCP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>68 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>bootpc </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Cliente boostrap (BOOTP); tamb�m usado por clientes do Protocolo de Controle da M�quina Din�mica (DHCP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>69 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>tftp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Transfer�ncia de Arquivos Triviais (TFTP - Trivial File Transfer Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>70 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>gopher </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Ferramenta de busca e recupera��o de documentos de Internet Gopher </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>71 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>netrjs-1 </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de Tarefa Remota </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>72 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>netrjs-2 </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de Tarefa Remota </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>73 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>netrjs-3 </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de Tarefa Remota </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>73 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>netrjs-4 </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de Tarefa Remota </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>79 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>finger </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o finger para informa��es de contato do usu�rio </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>80 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>http </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Transfer�ncia de H�perTexto (HTTP) para servi�os WWW (World Wide Web) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>88 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>kerberos </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sistema de autentica��o de rede Kerberos </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>95 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>supdup </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Extens�o do protocolo telnet </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>101 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>hostname </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os de nomes para m�quinas SRI-NIC </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>102/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>iso-tsap </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Aplica��es de rede do Ambiente de Desenvolvimento ISO (ISODE) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>105 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>csnet-ns </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor de nomes da caixa de correspond�ncia; tamb�m usado pelo servidor de nomes CSO </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>107 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>rtelnet </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Telnet remoto </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>109 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>pop2 </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Vers�o 2 do Protocolo do Post Office </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>110 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>pop3 </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Vers�o 3 do Protocolo do Post Office </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>111 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>sunrpc </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo da Chamada de Procedimento Remoto (RPC) para execu��o de comandos remotos, usado pelo Sistema de Arquivo de Rede (NFS) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>113 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>auth </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolos de autentica��o e identifica��o </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>115 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>sftp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os do Protocolo de Transfer�ncia de Arquivos Seguros (SFTP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>117 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>uucp-path </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os da Localidade do Protocolo de C�pia Unix-para-Unix (UUCP - Unix-to-Unix Copy Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>119 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>nntp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Transfer�ncia de Not�cias de Rede (Network News Transfer Protocol, NNTP) para o sistema de discuss�o USENET </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>123 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ntp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Hora da Rede (NTP - Network Time Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>137 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>netbios-ns </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de Nome do NETBIOS usado no Red Hat Enterprise Linux pelo Samba </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>138 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>netbios-dgm </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de Datagrama do NETBIOS usado no Red Hat Enterprise Linux pelo Samba </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>139 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>netbios-ssn </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de Sess�es do NETBIOS usado no Red Hat Enterprise Linux pelo Samba </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>143 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>imap </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Acesso � Mensagem via Internet (Internet Message Access Protocol, IMAP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>161 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>snmp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Administra��o de Rede Simples (SNMP - Simple Network Management Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>162 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>snmptrap </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Armadilhas SNMP </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>163 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>cmip-man </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Informa��es de Administra��o Comum (CMIP - Common Management Information Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>164 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>cmip-agent </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Informa��es de Administra��o Comum (CMIP - Common Management Information Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>174 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>mailq </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>fila de transporte de e-mail MAILQ </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>177 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>xdmcp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Controle da Administra��o de Exibi��o do X (XDMCP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>178 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>nextstep </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor de janelas do NeXTStep </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>179 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>bgp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo da Porta de Comunica��o da Divisa (Border Gateway Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>191 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>prospero </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os de sistema de arquivo distribu�dos Prospero </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>194 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>irc </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Internet Relay Chat (IRC) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>199 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>smux </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Multiplexador UNIX para SNMP </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>201 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>at-rtmp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Roteamento do AppleTalk </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>202 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>at-nbp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Liga��o de nomes do AppleTalk </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>204 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>at-echo </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Eco do AppleTalk </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>206 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>at-zis </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Informa��es da zona do AppleTalk </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>209 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>qmtp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Transfer�ncia de Correspond�ncia R�pida (QMTP - Quick Mail Transfer Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>210 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>z39.50 </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Banco de dados NISO Z39.50 </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>213 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ipx </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Troca de Pacotes entre Redes (Internetwork Packet Exchange, IPX), um protocolo de datagrama geralmente usado em ambientes Netware do Novell </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>220 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>imap3 </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Acesso a Mensagens via Internet vers�o 3 </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>245 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>link </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>LINK / Servi�o iQuery 3-DNS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>347 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>fatserv </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor de administra��o de fita e arquivos FATMEN </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>363 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>rsvp_tunnel </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>T�nel RSVP </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>369 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>rpc2portmap </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Portmapper do sistema de arquivo Coda </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>370 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>codaauth2 </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os de autentica��o do sistema de arquivo Coda </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>372 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ulistproc </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>UNIX LISTSERV </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>389 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ldap </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Acesso ao Diret�rio Lightweight (LDAP - Lightweight Directory Access Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>427 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>svrloc </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Localiza��o do Servi�o (SLP - Service Location Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>434 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>mobileip-agent </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Agente do Protocolo de Internet (IP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>435 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>mobilip-mn </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Administrador do Protocolo de Internet (IP) M�vel </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>443 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>https </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Transfer�ncia de Hypertexto Seguro (HTTPS - Secure Hypertext Transfer Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>444 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>snpp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Paging de Rede Simples </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>445 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>microsoft-ds </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Server Message Block (SMB) sobre TCP/IP </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>464 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>kpasswd </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os de altera��o da senha e chave do Kerberos </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>468 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>photuris </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de administra��o da chave da sess�o do Photuris </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>487 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>saft </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Transfer�ncia de Arquivos Ass�ncronos Simples (SAFT - Simple Asynchronous File Transfer) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>488 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>gss-http </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os de Seguran�a Gen�rica (Generic Security Services, GSS) para o HTTP </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>496 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>pim-rp-disc </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Rendezvous Point Discovery (RP-DISC) para os servi�os do Protocol Independent Multicast (PIM) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>500 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>isakmp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Administra��o da Chave e da Associa��o da Seguran�a de Internet (ISAKMP - Internet Security Association and Key Management Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>535 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>iiop </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo Internet Inter-Orb (IIOP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>538 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>gdomap </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Mapeador de Objetos Distribu�dos do GNUstep (GDOMAP - GNUstep Distributed Objects Mapper) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>546 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>dhcpv6-client </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Configura��o da M�quina Din�mica (DHCP - Dynamic Host Configuration Protocol) vers�o 6 cliente </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>547 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>dhcpv6-server </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Configura��o da M�quina Din�mica (DHCP - Dynamic Host Configuration Protocol) vers�o 5 Servi�o </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>554 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>rtsp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Controle do Stream em Tempo Real (RTSP - Real Time Stream Control Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>563 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>nntps </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Transporte de Not�cias de Rede sobre a SSL (NNTPS - Network News Transport Protocol over Secure Sockets Layer) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>565 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>whoami </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>lista whoami de IDs de usu�rios </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>587 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>submiss�o </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Agente de Submiss�o da Mensagem de Correio (MSA - Mail Message Submission Agent) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>610 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>npmp-local </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Administra��o dos Perif�ricos de Rede (NPMP - Network Peripheral Management Protocol) local / Sistema de Ordena��o Distribu�da (DQS - Distributed Queueing System) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>611 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>npmp-gui </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Administra��o dos Perif�ricos de Rede (NPMP - Network Peripheral Management Protocol) GUI / Sistema de Ordena��o Distribu�da (DQS - Distributed Queueing System) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>612 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>hmmp-ind </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Indica��o do Protocolo de Administra��o do HyperMedia (HMMP) / DQS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>631 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ipp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Impress�o da Internet (IPP - Internet Printing Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>636 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ldaps </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Acesso ao Diret�rio Lightweight sobre a SSL (LDAPS - Lightweight Directory Access Protocol over Secure Sockets Layer) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>674 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>acap </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Acesso � Configura�o da Aplica��o (ACAP - Application Configuration Access Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>694 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ha-cluster </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os heartbeat para Clusters de Alta Disponibilidade </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>749 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>kerberos-adm </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Administra��o do banco de dados kadmin do Kerberos vers�o 5 (v5) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>750 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>kerberos-iv </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os do Kerberos vers�o 4 (v4) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>765 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>webster </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Dicion�rio da Rede </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>767 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>phonebook </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Cat�logo de Telefones da Rede </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>873 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>rsync </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>servi�os de transfer�ncia de arquivos rsync </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>992 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>telnets </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Telnet sobre a Secure Sockets Layer (TelnetS) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>993 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>imaps </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Acesso a Mensagens da Internet sobre a SSL (IMAPS - Internet Message Access Protocol over Secure Sockets Layer) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>994 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ircs </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Internet Relay Chat sobre Secure Sockets Layer (IRCS) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>995 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>pop3s </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo do Post Office vers�o 3 sobre SSL (POP3S - Post Office Protocol version 3 over Secure Sockets Layer) </TD
+></TR
+></TBODY
+></TABLE
+><P
+><B
+>Tabela C-1. Portas Bem Conhecidas</B
+></P
+></DIV
+><P
+>A <A
+HREF="ch-ports.html#TB-PORTS-UNIX"
+>Tabela C-2</A
+> lista as portas espec�ficas do UNIX e abrange os servi�os desde e-mail a autentica��o, dentre outros. Os nomes entre colchetes (ex.: [<TT
+CLASS="REPLACEABLE"
+><I
+>servi�o</I
+></TT
+>]) s�o nomes de daemons do servi�o ou codenome(s) comuns. </P
+><DIV
+CLASS="TABLE"
+><A
+NAME="TB-PORTS-UNIX"
+></A
+><TABLE
+BORDER="1"
+BGCOLOR="#DCDCDC"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><THEAD
+><TR
+><TH
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>N�mero da Porta / Camada</TH
+><TH
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Nome</TH
+><TH
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Coment�rio</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>512/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>exec </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Autentica��o para execu��o do processo remoto </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>512/udp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>biff [comsat] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Cliente de Mail (biff) e servi�o (comsat) ass�ncronos </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>513/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>login </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Autentica��o Remota (rlogin) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>513/udp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>who [whod] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>daemon whod de autentica��o do usu�rio </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>514/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>shell [cmd] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>shell remota (rshell) e c�pia remota (rcp) sem autentica��o </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>514/udp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>syslog </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de autentica��o do sistema UNIX </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>515 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>printer [spooler] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>spooler da impressora em linha (lpr) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>517/udp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>talk </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o e cliente de chamada remota talk </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>518/udp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ntalk </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Cliente e Servi�o do Network talk (ntalk) remote calling </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>519 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>utime [unixtime] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de hora do UNIX (utime) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>520/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>efs </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor de Nomes Extendidos de Arquivo (EFS - Extended Filename Server) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>520/udp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>router [route, routed] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Informa��es de Roteamento (RIP- Routing Information Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>521 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ripng </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Informa��es de Roteamento para o Protocolo de Internet vers�o 6 (IPv6) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>525 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>timed [timeserver] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Daemon de hora (timed) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>526/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>tempo [newdate] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Tempo </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>530/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>courier [rpc] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Chamada do Processo Remoto de Mensageiro (RPC - Remote Procedure Call) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>531/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>conference [chat] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Internet Relay Chat </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>532 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>netnews </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de newsgroup Netnews </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>533/udp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>netwall </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Netwall para transmiss�es de emerg�ncia </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>540/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>uucp [uucpd] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os de c�pia UNIX-para-UNIX </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>543/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>klogin </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Autentica��o remota do Kerberos vers�o 5 (v5) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>544/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>kshell </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Shell remota do Kerberos vers�o 5 (v5) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>548 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>afpovertcp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Arquivamento do Appletalk (AFP) sobre o Protocolo de Controle da Transmiss�o (TCP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>556 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>remotefs [rfs_server, rfs] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sistema de Arquivo Remoto de Brunhoff (RFS) </TD
+></TR
+></TBODY
+></TABLE
+><P
+><B
+>Tabela C-2. Portas Espec�ficas do UNIX</B
+></P
+></DIV
+><P
+>A <A
+HREF="ch-ports.html#TB-PORTS-REGGED"
+>Tabela C-3</A
+> lista as portas submetidas pela rede e pela comunidade do software para o IANA, a fim de registr�-las formalmente: </P
+><DIV
+CLASS="TABLE"
+><A
+NAME="TB-PORTS-REGGED"
+></A
+><TABLE
+BORDER="1"
+BGCOLOR="#DCDCDC"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><THEAD
+><TR
+><TH
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>N�mero da Porta / Camada</TH
+><TH
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Nome</TH
+><TH
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Coment�rio</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1080 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>socks </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os proxy da aplica��o de rede SOCKS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1236 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>bvcontrol [rmtcfg] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor de Configura��o Remota dos comutadores de rede Gracilis Packeten<A
+NAME="AEN5344"
+HREF="#FTN.AEN5344"
+>[a]</A
+> </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1300 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>h323hostcallsc </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>H.323 telecommunication Host Call Secure </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1433 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ms-sql-s </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sefrvidor do Microsoft SQL </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1434 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ms-sql-m </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Monitor do Microsoft SQL </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1494 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ica </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Cliente Citrix ICA </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1512 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>wins </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor de Nomes Internet do Microsoft Windows </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1524 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ingreslock </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os de bloqueio do Sistema de Administra��o do Banco de Dados Ingres (DBMS - Database Management System) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1525 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>prospero-np </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Prospero n�o-privilegiado </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1645 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>datametrics [old-radius] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Datametrics / entrada do radius antigo </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1646 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>sa-msg-port [oldradacct] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>sa-msg-port / entrada do radacct antigo </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1649 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>kermit </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de administra��o e transfer�ncia de arquivos Kermit </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1701 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>l2tp [l2f] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Tunneling da Camada 2 (LT2P - Layer 2 Tunneling Protocol) / Encaminhamento da Camada 2 (L2F - layer 2 forwarding) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1718 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>h323gatedisc </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>H.323 telecommunication Gatekeeper Discovery </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1719 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>h323gatestat </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>H.323 telecommunication Gatekeeper Status </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1720 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>h323hostcall </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>H.323 telecommunication Host Call setup </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1758 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>tftp-mcast </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Multi-transmiss�o do FTP Trivial </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1759/udp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>mtftp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>FTP Trivial de Multi-transmiss�o (MTFTP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1789 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>hello </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de comunica��o do roteador hello </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1812 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>radius </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os de autentica��o e contabilidade da discagem do radius </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1813 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>radius-acct </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Contabilidade do Radius </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1911 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>mtp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Transporte Multim�dia das Redes Starlight (MTP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1985 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>hsrp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo do Roteador Standby do Cisco Hot </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1986 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>licensedaemon </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Daemon da Administra��o de Licensa Cisco </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1997 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>gdp-port </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo da Descoberta da Porta de Comunica��o Cisco (GDP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2049 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>nfs [nfsd] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sistema de Arquivo de Rede (NFS) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2102 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>zephyr-srv </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor de mensagens distribu�das Zephyr </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2103 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>zephyr-clt </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>cliente Zephyr </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2104 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>zephyr-hm </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Administrador da m�quina Zephyr </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2401 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>cvspserver </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Concurrent Versions System (CVS) cliente/opera��es de servidor </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2430/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>venus </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Administrador de cache Venus para o sistema de arquivo Coda (porta codacon) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2430/udp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>venus </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Administrador de cache Venus para o sistema de arquivo Coda (callback/interface wbc) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2431/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>venus-se </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>efeitos colaterais do Protocolo de Controle de Transmiss�o (TCP) Venus </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2431/udp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>venus-se </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Efeitos colaterais do Protocolo de Datagrama de Usu�rio V�nus (Venus User Datagram Protocol, UDP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2432/udp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>codasrv </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>porta do servidor do sistema de arquivo Coda </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2433/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>codasrv-se </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>efeitos colaterais do TCP do sistema de arquivo Coda </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2433/udp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>codasrv-se </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>efeitos colaterais do SFTP do UDP do sistema de arquivo Coda </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2600 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>hpstgmgr [zebrasrv] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Roteamento do Zebra<A
+NAME="AEN5491"
+HREF="#FTN.AEN5491"
+>[b]</A
+> </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2601 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>discp-client [zebra] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>cliente discp; shell integrada do Zebra </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2602 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>discp-server [ripd] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>servidor discp; daemon do Protocolo de Informa��es de Roteamento (ripd) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2603 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>servicemeter [ripngd] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Medidor do Servi�o; daemon do RIP para IPv6 </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2604 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>nsc-ccs [ospfd] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>NSC CCS; daemon do Open Shortest Path First (ospfd) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2605 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>nsc-posa </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>NSC POSA; daemon do Protocolo da Porta de Comunica��o da Divisa (bgpd) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2606 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>netmon [ospf6d] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Dell Netmon; OSPF para o dameon do IPv6 (ospf6d) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2809 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>corbaloc </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Common Object Request Broker Architecture (CORBA) nomeando localizador de servi�os </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>3130 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>icpv2 </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo do Cache da Internet vers�o 2 (v2); usado pelo servidor de caching do proxy Squid </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>3306 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>mysql </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de banco de dados MySQL </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>3346 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>trnsprntproxy </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Proxy transparente </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>4011 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>pxe </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>servi�o do Ambiente de Pr�-execu��o (PXE - Pre-execution Environment) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>4321 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>rwhois </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o remoto Whois (rwhois) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>4444 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>krb524 </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>tradutor de ticket do Kerberos vers�o 5 (v5) para a vers�o 4 (v4) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>5002 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>rfe </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sistema de transmiss�o de �udio Radio Free Ethernet (RFE) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>5308 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>cfengine </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Mecanismo de Configura��o (Cfengine - Configuration Engine) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>5999 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>cvsup [CVSup] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ferramenta de atualiza��o e transfer�ncia de arquivos CVSup </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>6000/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>x11 [X] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os do Sistema X Window </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7000 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>afs3-fileserver </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor de arquivos do Sistema de Arquivo Andrew (AFS - Andrew File System) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7001 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>afs3-callback </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>porta AFS para callbacks do administrador do cache </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7002 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>afs3-prserver </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>banco de dados dos grupos e usu�rios do AFS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7003 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>afs3-vlserver </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>banco de dados da localiza��o de volumes do AFS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7004 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>afs3-kaserver </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>servi�o de autentica��o do Kerberos para o AFS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7005 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>afs3-volser </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor de administra��o dos volumes do AFS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7006 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>afs3-errors </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de interpreta��o de erros do AFS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7007 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>afs3-bos </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>processo de supervis�o b�sica do AFS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7008 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>afs3-update </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>atualizador servidor-para-servidor do AFS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7009 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>afs3-rmtsys </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>servi�o de administra��o do cache remoto do AFS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>9876 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>sd </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Diretor de Sess�o para confer�ncias multi-transmiss�o de IPs </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>10080 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>amanda </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>servi�os de backup do Arquivador de Disco de Rede Autom�tico Maryland Avan�ado (Amanda - Advanced Maryland Automatic Network Disk Archiver) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>11371 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>pgpkeyserver </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Pretty Good Privacy (PGP) / servidor de chaves p�blicas GNU Privacy Guard (GPG) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>11720 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>h323callsigalt </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>H.323 Call Signal Alternate </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>13720 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>bprd </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Daemon dos Pedidos de Backup de Rede Veritas (bprd - NetBackup Request Daemon) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>13721 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>bpdbm </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Administrador do Banco de Dados de Backup de Rede Veritas (bpdbm - NetBackup Database Manager) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>13722 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>bpjava-msvc </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Java do Backup de Rede Veritas / Protocolo do Microsoft Visual C++ (MSVC) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>13724 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>vnetd </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Utilit�rio de rede Veritas </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>13782 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>bpcd </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>tBackupde Rede  Veritas </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>13783 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>vopied </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Daemon de autentica��o de VOPIE Veritas </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>22273 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>wnn6 [wnn4] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sistema de convers�o Kana/Kanji<A
+NAME="AEN5646"
+HREF="#FTN.AEN5646"
+>[c]</A
+> </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>26000 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>quake </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>servidores de jogos multi-jogadores do Quake (e relacionados) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>26208 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>wnn6-ds </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Wnn6 Kana/Servidor Kanji </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>33434 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>traceroute </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ferramenta de rastreamento da rede Traceroute </TD
+></TR
+></TBODY
+><TR
+><TD
+COLSPAN="3"
+>Notas:<BR><A
+NAME="FTN.AEN5344"
+>a. </A
+>Coment�rio do <TT
+CLASS="FILENAME"
+>/etc/services</TT
+>: "A porta 1236 est� registrada como `bvcontrol', mas tamb�m � usada pelo servidor de configura��o remota Gracilis Packeten. O nome oficial est� listado como o nome principal, e o nome n�o-registrado como codenome." <BR><A
+NAME="FTN.AEN5491"
+>b. </A
+>Coment�rio do <TT
+CLASS="FILENAME"
+>/etc/services</TT
+>: "As portas numeradas de 2600 a 2606 s�o usadas pelo pacote zebra sem serem registradas. Os nomes prim�rios s�o nomes registrados e os nomes n�o-registrados usados pelo zebra est�o listados como codenomes (aliases)."<BR><A
+NAME="FTN.AEN5646"
+>c. </A
+>Nota do <TT
+CLASS="FILENAME"
+>/etc/services</TT
+>: "Esta porta � registrada como wnn6, mas tamb�m � usada sob o nome n�o-registrado 'wnn4' pelo pacote FreeWnn."<BR></TD
+></TR
+></TABLE
+><P
+><B
+>Tabela C-3. Portas Registradas</B
+></P
+></DIV
+><P
+>A <A
+HREF="ch-ports.html#TB-PORTS-DATAGRAM"
+>Tabela C-4</A
+> lista as portas relacionadas ao Protocolo de Entrega do Datagrama (DDP) usadas em redes AppleTalk. </P
+><DIV
+CLASS="TABLE"
+><A
+NAME="TB-PORTS-DATAGRAM"
+></A
+><TABLE
+BORDER="1"
+BGCOLOR="#DCDCDC"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><THEAD
+><TR
+><TH
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>N�mero da Porta / Camada</TH
+><TH
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Nome</TH
+><TH
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Coment�rio</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1/ddp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>rtmp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Administra��o da Tabela de Roteamento </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2/ddp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>nbp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Liga��o de Nomes (Name Binding Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>4/ddp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>echo </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo Echo do AppleTalk </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>6/ddp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>zip </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Informa��es da Zona </TD
+></TR
+></TBODY
+></TABLE
+><P
+><B
+>Tabela C-4. Portas do Protocolo de Entrega do Datagrama</B
+></P
+></DIV
+><P
+>A <A
+HREF="ch-ports.html#TB-PORTS-KERBEROS"
+>Tabela C-5</A
+> � uma lista das portas relacionadas ao protocolo de autentica��o de rede Kerberos. Onde estiver indicado, v5 refere-se ao protocolo do Kerberos vers�o 5. Note que estas portas n�o s�o registradas na IANA.</P
+><DIV
+CLASS="TABLE"
+><A
+NAME="TB-PORTS-KERBEROS"
+></A
+><TABLE
+BORDER="1"
+BGCOLOR="#DCDCDC"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><THEAD
+><TR
+><TH
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>N�mero da Porta / Camada</TH
+><TH
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Nome</TH
+><TH
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Coment�rio</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>751 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>kerberos_master </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>autentica��o do Kerberos </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>752 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>passwd_server </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor de Senha do Kerberos (kpasswd) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>754 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>krb5_prop </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Propaga��o do Kerberos v5 escravo </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>760 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>krbupdate [kreg] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>registro do Kerberos </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1109 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>kpop </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo Post Office do Kerberos (KPOP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2053 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>knetd </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Des-multiplexador do Kerberos </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2105 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>eklogin </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>autentica��o remota criptografada do Kerberos v5 (rlogin) </TD
+></TR
+></TBODY
+></TABLE
+><P
+><B
+>Tabela C-5. Portas do Kerberos (Projeto Athena/MIT)</B
+></P
+></DIV
+><P
+>J� a <A
+HREF="ch-ports.html#TB-PORTS-UNREGGED"
+>Tabela C-6</A
+> � uma lista de portas n�o-registradas que s�o usadas por servi�os e protocolos que podem ser/estar instalados no seu sistema Red Hat Enterprise Linux ou s�o necess�rios para a comunica��o entre o Red Hat Enterprise Linux e outros sistemas operacionais. </P
+><DIV
+CLASS="TABLE"
+><A
+NAME="TB-PORTS-UNREGGED"
+></A
+><TABLE
+BORDER="1"
+BGCOLOR="#DCDCDC"
+CELLSPACING="0"
+CELLPADDING="4"
+CLASS="CALSTABLE"
+><THEAD
+><TR
+><TH
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>N�mero da Porta / Camada</TH
+><TH
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Nome</TH
+><TH
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Coment�rio</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>15/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>netstat </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Estado da Rede (netstat) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>98/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>linuxconf </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Ferramenta de Administra��o do Linux Linuxconf </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>106 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>poppassd </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Daemon de altera��o da Senha do Protocolo Post Office (POPPASSD) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>465/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>smtps </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Transfer�ncia de Correspond�ncia Simples sobre Secure Sockets Layer (SMTPS) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>616/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>gii </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Interface Interativa do Gated (daemon de roteamento) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>808 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>omirr [omirrd] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os de espelhamento de arquivo Online Mirror (Omirr) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>871/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>supfileserv </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor do Protocolo de Atualiza��o de Software (Software Upgrade Protocol, SUP) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>901/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>swat </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Ferramenta de Administra��o Web do Samba (SWAT - Samba Web Administration Tool) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>953 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>rndc </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Ferramenta de configura��o remota Berkeley Internet Name Domain vers�o 9 (BIND 9) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1127/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>supfiledbg </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Depura��o do Protocolo de Atualiza��o de Software (SUP - Software Upgrade Protocol) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1178/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>skkserv </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Kana Simples para Kanji (SKK) servidor de input em Japon�s </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1313/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>xtel </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sistema de informa��es de texto French Minitel </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>1529/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>suporte [prmsd, gnatsd] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sistema de rastreamento de erros GNATS </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2003/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>cfinger </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Finger do GNU </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2150 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ninstall </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de Instala��o de Rede </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>2988 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>afbackup </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>sistema de backup cliente-servidor afbackup </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>3128/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>squid </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Cache de proxy Squid Web </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>3455 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>prsvp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>porta RSVP </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>5432 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>postgres </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Banco de dados PostgreSQL </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>4557/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>fax </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de transmiss�o de FAX (servi�o antigo) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>4559/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>hylafax </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo cliente-servidor HylaFAX (servi�o novo) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>5232 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>sgi-dgl </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Biblioteca Gr�fica Distribu�da SGI </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>5354 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>noclog </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Daemon de autentica��o do centro de opera��es de rede NOCOL (noclogd - NOCOL network operation center logging daemon) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>5355 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>hostmon </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Monitoramento de m�quina do centro de opera��es de rede NOCOL </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>5680/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>canna </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Interface do input dos caracteres Japoneses Canna </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>6010/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>x11-ssh-offset </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Secure Shell (SSH) X11 forwarding offset </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>6667 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>ircd </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Daemon do Internet Relay Chat (ircd) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7100/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>xfs </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor de Fontes do X (XFS) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>7666/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>tircproxy </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o proxy do IRC Tircproxy </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>8008 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>http-alt </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Transfer�ncia de Hipertexto (HTTP) alternado </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>8080 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>webcache </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de caching da World Wide Web (WWW) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>8081 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>tproxy </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Proxy Transparente </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>9100/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>jetdirect [laserjet, hplj] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de impress�o de rede da Hewlett-Packard (HP) JetDirect </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>9359 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>mandelspawn [mandelbrot] </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Programa de spawning Parallel Mandelbrot para o Sistema X Window </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>10081 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>kamanda </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de backup Amanda sobre o Kerberos </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>10082/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>amandaidx </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servidor de �ndice Amanda </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>10083/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>amidxtape </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�os de fita Amanda </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>20011 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>isdnlog </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sistema de autentica��o da Rede Digital de Servi�os Integrados (ISDN - Integrated Systems Digital Network) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>20012 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>vboxd </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Daemon da caixa de voz da ISDN (vboxd - voice box dameon) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>22305/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>wnn4_Kr </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sistema de input Coreano kWnn </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>22289/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>wnn4_Cn </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sistema de input Chin�s cWnn </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>22321/tcp </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>wnn4_Tw </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Sistema de input Chin�s tWnn (Taiwan) </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>24554 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>binkp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Daemon de correspond�ncia Binkley TCP/IP Fidonet </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>27374 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>asp </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Protocolo de Busca de Endere�os </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>60177 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>tfido </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Servi�o de correspond�ncia compat�vel ao FidoNet Ifmail </TD
+></TR
+><TR
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>60179 </TD
+><TD
+WIDTH="20%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>fido </TD
+><TD
+WIDTH="60%"
+ALIGN="LEFT"
+VALIGN="TOP"
+>Rede de not�cias e correspond�ncia eletr�nica FidoNet </TD
+></TR
+></TBODY
+></TABLE
+><P
+><B
+>Tabela C-6. Portas N�o-registradas</B
+></P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="ch-exploits.html"
+ACCESSKEY="P"
+>Anterior</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Principal</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="generated-index.html"
+ACCESSKEY="N"
+>Pr�xima</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Exploits e Ataques Comuns</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="pt-appendixes.html"
+ACCESSKEY="U"
+>Acima</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>�ndice Remissivo</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

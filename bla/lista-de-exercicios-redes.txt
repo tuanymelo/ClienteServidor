@@ -1,0 +1,32 @@
+Camada de Redes
+
+Introdução
+- Na camada de rede, qual a diferença entre Repasse e Roteamento?
+- Quais modelos de serviço de rede podem ser oferecidos por esta camada?
+- Explique a estrutura de um roteador: Portas de entrada, elementos de comutação, portas de saída e processamento.
+- Pq um roteador precisa de buffer em suas portas de entrada? E em suas portas de saída?
+- Explique as técnicas de comutação de pacote (memória, barramento e interconexão). Compare-as apresentando vantagens e desvantagens.
+- Onde ocorre a fila e a perda de pacotes em roteadores?
+
+Protocolo IPv4
+- Explique os campos do datagrama IP.
+- Apresente o endereço IP 10.10.1.1 como um valor inteiro e também como valor binário.
+- Qual a relação entre o MTU de um datagrama e a fragmentação do datagrama?
+- O que é sub-rede e máscara de subrede?
+- Quantos endereços uma rede subrede /24 pode possuir? Dê exemplos.
+- O que é endereço de gateway e endereço de broadcast?
+
+DHCP, NAT e ICMP
+- Como funciona o serviço DHCP? Quais as vantagens e desvantagens deste serviço?
+- Como é a configuração de uma máquina da rede sem o DHCP?
+- O que é NAT? Quais as vantagens e desvatagens de utilizarmos esta tradução de endereços?
+- Explique o protocolo ICMP e os comandos ping e traceroute.
+- Como o aplicativo traceroute pode utilizar o TTL para identificar a rota de um pacote?
+
+IPv6
+- Pq o IPv6 não possui campo de fragmentação ou checksum?
+- Qual a dificultade ténica de transição entre IPv4 e IPv6?
+
+IGMP
+- Como funciona o protocolo IGMP?
+- Qual a vantagem de utilizar multicast sobre broadcast?

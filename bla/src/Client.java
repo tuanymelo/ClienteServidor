@@ -1,3 +1,5 @@
+import java.io.BufferedOutputStream;
+import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -19,6 +21,7 @@ public class Client {
 	static Boolean naoFinal = false;
 	static FileWriter file;
 	static String novoEndereco;
+	
 	
 	public static void lerEntrada(){
 		System.out.println("Navegador =>");
@@ -68,8 +71,8 @@ public class Client {
 			naoFinal = true;
 			extencao = "index";
 		}
-	//	System.out.println("extencao " + extencao);
-	}
+	
+   }
 	
 	 public static void main(String[] args) throws UnknownHostException, IOException {
 		 lerEntrada();
@@ -78,9 +81,7 @@ public class Client {
 		 
 	     //cria um socket com o servidor na porta escolhida 
 	     socket = new Socket(servidor, porta);
-	     
-	  //   System.out.println("serv  "+ servidor);
-	     
+
 	     //verifica se esta conectado 
 	     if (socket.isConnected()) {
 	    	 //imprime o endereço de IP do servidor 
@@ -94,7 +95,6 @@ public class Client {
 			     extencao += ".html";
 			     System.out.println("req  "+requisicao);
 		     }else{
-
 		    	 requisicao = ""
 			                + "GET " + novoEndereco + " HTTP/1.1\r\n"
 			                + "Host: " + servidor + "\r\n"
@@ -103,20 +103,20 @@ public class Client {
 		     }
 		     
 		   //OutputStream envia a requisição para o servidor
-		    OutputStream envioServ = socket.getOutputStream();
+		   OutputStream envioServ = socket.getOutputStream();
 		    //transforma requisicao em vetor de bytes que é o que o servidor entende
-		    byte[] b = requisicao.getBytes();
-		    //escreve o vetor de bytes no OutputStream
-		    envioServ.write(b);
-		    //marca a finalização da escrita 
-		    envioServ.flush();
+		   byte[] b = requisicao.getBytes();
+		   //escreve o vetor de bytes no OutputStream
+		   envioServ.write(b);
+		   //marca a finalização da escrita 
+		   envioServ.flush();
 		    
-		    /*enviou a requisicao, agr é preciso ver a resposta do servidor*/
+		   /*enviou a requisicao, agr é preciso ver a resposta do servidor*/
 		    
-		    //ler do InputStream que vem do servidor 
-		    entrada = new Scanner(socket.getInputStream());
+		   //ler do InputStream que vem do servidor 
+		   entrada = new Scanner(socket.getInputStream());
 		    
-		    //cria um arquivo, o nome dele sera a extencao do arquivo solicitado
+		   //cria um arquivo, o nome dele sera a extencao do arquivo solicitado
 		    file = new FileWriter(new File(extencao));
 		    
 		    ArrayList<String> respostaServidor = new ArrayList<>();
@@ -134,7 +134,6 @@ public class Client {
 				if (respostaServidor.get(i).contains("Content-Type")) {
 					comeca = i + 2;
 					break;
-	
 				}
 			}
 			
@@ -143,6 +142,7 @@ public class Client {
 				file.write(respostaServidor.get(i));
 				file.write("\n");
 			}
+			
 	
 	        file.flush();
 	        file.close();

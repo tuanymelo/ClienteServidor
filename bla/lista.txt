@@ -1,0 +1,29 @@
+Camada de transporte
+
+Introdução
+- Qual a relação entre a camada de transporte e a camada de rede?
+- Qual a relação entre transferência confiável de dados e controle de congestionamento?
+- Como o número de porta pode auxiliar a multiplexação da camada de transporte?
+- Relacione a multiplexação da camada de transporte com a camada de aplicação.
+
+UDP
+- Explique a importância do UDP como protocolo simples da camada de transporte.
+- Quais as vantagens em termos um protocolo não confiável para comunicação em rede?
+- Apresente a estrutura do segmento UDP e seus campos.
+- O que seria necessário para implementar uma comunicação confiável sobre o protocolo UDP?
+- Explique mensagens de ACK e demais mensagens de controle de recebimento.
+- Porque é necessário utilizar um temporizador?
+- Como a retransmissão de dados pode garantir confiabilidade? O que é retransmissão GBN e SR?
+
+TCP
+- Como o TCP garante confiabilidade de entrega de mensagens?
+- Qual a estrutura do segmento TCP? Apresente seus campos.
+- O que é o temporizador do TCP? Como o TCP consegue ajustar seu temporizador?
+- O que é uma janela deslizante? E retransmissão rápida?
+- Como funciona o início e fim de uma conexão TCP?
+- Explique o que é controle de fluxo e controle de congestionamento e a diferença entre estes conceitos.
+- O TCP baseia-se em 3 conceitos: partida lenta, contenção de congestionamento e recuperação rápida. Explique estes conceitos.
+
+Para saber mais
+- O que é o DCCP e como ele funciona?
+- Quais as vantagens em trabalhar com o SCTP?
